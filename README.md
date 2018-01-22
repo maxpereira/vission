@@ -1,5 +1,7 @@
 # Vission.io
 
-Vission.io is a new type of social network. A network where people connect themselves and create innovative ideas together. The network expands over time as more people join and branch out into their own topics of creativity. Our platform was designed for anyone who has the creative drive in them, artists, musicians, writers, whoever! As long as you can see the Vission, you can build something to change the world.
+Linear communication is so last century. Vission aims to bring communication into the future, by implementing a node based collaborative system that fosters the organic growth of ideas. The nodemap expands over time as more people join and branch out, continuing a flow of ideas. Our platform was designed for creators who yearn for an easier way to collaborate and find new ideas. As long as you can see the Vission, you can build something that changes the world.
 
-Created by Lasse Nordahl, Bernard Zhao, Zach Zulanas and Max Pereira
+This project is a fork of the hackathon project to continue tinkering with firebase and adding additional features.
+
+*Original project created by Lasse Nordahl, Bernard Zhao, Zach Zulanas and Max Pereira [for Cruzhacks 2018](https://devpost.com/software/vission).*
