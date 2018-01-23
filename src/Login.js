@@ -18,22 +18,20 @@ class Login extends React.Component{
     xhr.onload = function() {
       //console.log('Signed in as: ' + xhr.responseText);
       returnedIdToken = JSON.parse(xhr.responseText);
-      console.log(returnedIdToken.name);
-      console.log(returnedIdToken.email);
+      //console.log(returnedIdToken.name);
+     // console.log(returnedIdToken.email);
       localStorage.setItem('username', JSON.stringify(returnedIdToken.name));
     };
     xhr.send();
     //console.log(returnedIdToken.name);
     //console.log({accessToken: id_token});
     console.log('DAMN BOI HE THICC');
-    
-    //console.log(googleUser);
     }
  
   render () {
     return (
       <div>
-        <GoogleLogin socialId="396611738669-gopcniqlfh179th8ftim2haab1v9lk6p.apps.googleusercontent.com"
+        <GoogleLogin socialId="33204960207-ks4fs6or2afe0o6279kg4o62vdarul22.apps.googleusercontent.com"
                      className="google-login"
                      scope="profile"
                      fetchBasicProfile={true}

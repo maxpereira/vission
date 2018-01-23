@@ -9,7 +9,7 @@ import NodeDialog from './nodeDialog.js';
 import LoginModal from './loginModal.js';
 import uuid from "uuid";
 import Login from './Login';
-import { GoogleLogin } from 'react-google-login-component';
+import { GoogleLogin, GoogleLogout } from 'react-google-login-component';
 import { Button, Header, Icon, Image, Modal, Container, Sidebar, Segment, Menu } from 'semantic-ui-react';
 
 // Backend imports
@@ -183,6 +183,9 @@ class App extends Component {
       sidebarVisible: !this.state.sidebarVisible 
     });
   };
+  logout() {
+    console.log("Logged out of Google");
+  }
 
   render() {
     return (
@@ -194,6 +197,9 @@ class App extends Component {
             </Menu.Item>
             <Menu.Item name='logIn'>
               <Login responseHandler={this.handleGoogleInfo}/>
+            </Menu.Item>
+            <Menu.Item name='logOut'>
+ 
             </Menu.Item>
             <Menu.Item name='about'>
               <a href='#' onClick={this.toggleAboutVisibility}>About</a>
