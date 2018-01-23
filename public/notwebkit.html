@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<script>
-	window.onload = checkChrome();
-	var isChrome = navigator.userAgent.indexOf('Chrome') > -1;
-	function checkChrome() {
-		if (navigator.userAgent.search("Chrome") < 0 && navigator.userAgent.search("Safari") < 0) {
-			document.location.href = "/notwebkit.html";
-		}
-	}
-	</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -29,23 +20,21 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Vission.io</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato');
+        * { font-family: 'Roboto', sans-serif; }
+    </style> 
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <center>
+    <img src="logoSquare.png" width=10% height=10%>
+    <h1>We need to talk.</h1>
+    <h3>It's not you, it's me.</h3>
+    Vission.io currently only supports Google Chrome or Safari.
+    Please check back using one of those browsers.
+    </center>
   </body>
-  <script src="https://smartlock.google.com/client" async></script>
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </html>
