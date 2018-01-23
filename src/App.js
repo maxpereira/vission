@@ -193,7 +193,7 @@ class App extends Component {
               <a href='#'><img src={logo}/></a>
             </Menu.Item>
             <Menu.Item name='logIn'>
-            <Login responseHandler={this.handleGoogleInfo}/>
+              <Login responseHandler={this.handleGoogleInfo}/>
             </Menu.Item>
             <Menu.Item name='about'>
               <a href='#' onClick={this.toggleAboutVisibility}>About</a>
