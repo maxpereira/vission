@@ -1,11 +1,11 @@
 import firebase from 'firebase';
 var firebaseConfig = {
-  apiKey: "AIzaSyCCsYSqa_CyfjVNib761b9CrdNc7X0bUGM",
-  authDomain: "vission-6d6fd.firebaseapp.com",
-  databaseURL: "https://vission-6d6fd.firebaseio.com",
-  projectId: "vission-6d6fd",
-  storageBucket: "vission-6d6fd.appspot.com",
-  messagingSenderId: "594035377988"
+  apiKey: "AIzaSyC9T__N_caP_HEANMHpDq9ckIOjw7ytDiQ",
+  authDomain: "vission-io.firebaseapp.com",
+  databaseURL: "https://vission-io.firebaseio.com",
+  projectId: "vission-io",
+  storageBucket: "vission-io.appspot.com",
+  messagingSenderId: "309099591006"
 };
 
 var VissionApp = firebase.initializeApp(firebaseConfig);
