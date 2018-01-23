@@ -48,7 +48,7 @@ class NodeMessages extends Component {
       console.log(this.props.uniqueID)
       this.database.child(this.props.uniqueID).child('messages').push({
         //name: currentUser.displayName,
-        name: "Anonymous",
+        name: JSON.parse(localStorage.getItem('username')),
         text: this.state.message
         //photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
       }).then(function() {

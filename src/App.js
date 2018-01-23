@@ -193,21 +193,7 @@ class App extends Component {
               <a href='#'><img src={logo}/></a>
             </Menu.Item>
             <Menu.Item name='logIn'>
-            <Modal trigger={<Button inverted>Log In</Button>} size='small'>
-            <Header icon='comments' content='Choose a username.' />
-            <Modal.Content>
-              <p>Choose a username to use when chatting in the Vission.</p>
-              <div class='ui input'><input type="text" value={this.state.login} onChange={this.handleChange} placeholder="Login" /></div>
-            </Modal.Content>
-            <Modal.Actions>
-              <Button color='red' inverted>
-                <Icon name='trash' /> Cancel
-              </Button>
-              <Button color='green' inverted>
-                <Icon name='checkmark'/> Submit
-              </Button>
-            </Modal.Actions>
-          </Modal>
+            <Login responseHandler={this.handleGoogleInfo}/>
             </Menu.Item>
             <Menu.Item name='about'>
               <a href='#' onClick={this.toggleAboutVisibility}>About</a>
